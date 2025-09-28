@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+
+<html>   
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>Quiz - Angry Birds</title>
+        <link rel="stylesheet" href="Css/Estilo.css">
+        <link rel="shortcut icon" href="img/Angry Birds - Icon.jpg" type="x-icon">
+        <script src="Js/Action.js" defer></script>
+    </head>
+    
+    <body>
+
+
+        <div id="menu" class="menu">
+            <h1>Selecione o nível</h1>
+            <div class="botoes-menu">
+                <button class="botao-nivel" onclick="iniciarQuiz('izi')">IZI</button>
+                <button class="botao-nivel" onclick="iniciarQuiz('medio')">MÉDIO</button>
+                <button class="botao-nivel" onclick="iniciarQuiz('senior')">SENIOR</button>
+            </div>
+        </div>
+
+        <div id="quiz" class="Quiz-Caixa" style="display:none;">
+            <h1>Quiz - Angry Birds (Só os seniors conseguem gabaritar!)</h1>
+            <div id="pergunta" class="question"></div>
+            <div id="opcoes"></div>
+            <div id="resultado" class="result"></div>
+            <div id="botoesFinais"></div>
+        </div>
+    </body>
+</html>
